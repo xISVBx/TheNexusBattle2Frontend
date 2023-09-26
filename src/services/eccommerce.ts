@@ -4,6 +4,7 @@ import { GetPagesResponse } from '../interfaces/GetPagesResponse';
 
 class EcommerceApi {
     baseUrl: string
+    
     constructor() {
         this.baseUrl = 'http://delta.bucaramanga.upb.edu.co:666/api/Ecommerce'
     }
