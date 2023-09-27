@@ -1,13 +1,13 @@
 import '../../index.css'
 import Barradebusqueda from './components/Encabezado/Barradebusqueda'
-import Encabezado from './components/Encabezado/Encabezado'
+import Navbar from './components/Encabezado/Navbar'
 import EncabezadoOpciones from './components/Encabezado/EncabezadoOpciones'
 import Vitrina from './components/Encabezado/Vitrina'
 
 export default function HomePage() {
     return (
         <div className='container'>
-            <Encabezado/>
+            <Navbar/>
             <EncabezadoOpciones/>
             <Barradebusqueda />
             <Vitrina/>

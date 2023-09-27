@@ -1,0 +1,63 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  Grid-area: cartas;
+}
+
+.detalle {
+  text-align: center;
+  background-color: #441b00;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: 0; /* Ajusta el margen a 0px para mover el rectángulo hacia arriba */
+}
+
+.producto {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.producto img {
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.informacion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.valoracion {
+  /* sistema de valoración */
+}
+
+.comentarios {
+  /* apartado de comentarios */
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+/* Estilos para los botones */
+.boton-volver,
+.boton-comprar {
+  background-color: #7a1800;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
