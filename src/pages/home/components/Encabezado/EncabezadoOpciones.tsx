@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import '../../css/EncabezadoOpciones.css';
 import CarritoFlotante from './CarritoFlotante';
 

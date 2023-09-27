@@ -1,4 +1,3 @@
-import React from "react";
 import "../../css/CarritoFlotante.css";
 import {Link} from 'react-router-dom';
 
