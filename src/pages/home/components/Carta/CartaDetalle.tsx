@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../css/CartaDetalle.css';
 
 interface Carta {
   imagen: string;
@@ -10,7 +9,13 @@ interface Carta {
 }
 
 const CartaDetalle: React.FC = () => {
-  const [carta, setCarta] = useState<Carta>({});
+  const [carta, setCarta] = useState<Carta>({
+    imagen: '',
+    nombre: '',
+    type: '',
+    descripcion: '',
+    precio: 0,
+  });
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -35,30 +40,30 @@ const CartaDetalle: React.FC = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <div className={styles.detalle}>
+    <div className="container">
+      <div className="detalle">
         <h1>Detalles del producto</h1>
-        <div className={styles.producto}>
+        <div className="producto">
           <img src={carta.imagen} alt="Carta" />
-          <div className={styles.informacion}>
+          <div className="informacion">
             <h2>{carta.nombre}</h2>
             <p>Tipo: {carta.type}</p>
-            <p>Descripcion: {carta.descripcion}</p>
+            <p>Descripción: {carta.descripcion}</p>
             <p>Precio: ${carta.precio}</p>
 
-            <div className={styles.valoracion}>
+            <div className="valoracion">
               {/* Agregar el sistema de valoración con estrellas */}
             </div>
           </div>
         </div>
-        <div className={styles.comentarios}>
+        <div className="comentarios">
           {/* Agregar el apartado de comentarios */}
         </div>
-        <div className={styles.botones}>
-          <button className={styles['boton-volver']} onClick={handleVolverClick}>
+        <div className="botones">
+          <button className='boton-volver' onClick={handleVolverClick}>
             Volver
           </button>
-          <button className={styles['boton-comprar']} onClick={handleComprarClick}>
+          <button className='boton-comprar' onClick={handleComprarClick}>
             Comprar
           </button>
         </div>
