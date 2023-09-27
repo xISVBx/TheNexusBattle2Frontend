@@ -5,18 +5,20 @@ import { Value as carta } from '../../interfaces/GetVitrinaResponse';
 import CartaDetalle from '../../shared/components/carta/CartaDetalle';
 import Barradebusqueda from '../../shared/components/encabezado/Barradebusqueda';
 import EncabezadoOpciones from '../../shared/components/encabezado/EncabezadoOpciones';
+import Navbar from '../../shared/components/encabezado/Navbar'
 
 export default function DetailPage() {
     const { carta, inventario } = useParams();
 
-    const cartaObject : carta = JSON.parse(decodeURIComponent(carta!));
-    const cartaInventarioObject : GetCartaByIDResponse = JSON.parse(decodeURIComponent(inventario!));
+    const cartaObject: carta = JSON.parse(decodeURIComponent(carta!));
+    const cartaInventarioObject: GetCartaByIDResponse = JSON.parse(decodeURIComponent(inventario!));
     return (
         <div className='container'>
-            <EncabezadoOpciones/>
+            <Navbar />
+            <EncabezadoOpciones />
             <Barradebusqueda />
             <CartaDetalle cartaObject={cartaObject}
-            cartaInventarioObject={cartaInventarioObject} />
+                cartaInventarioObject={cartaInventarioObject} />
         </div>
     )
 }
