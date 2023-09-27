@@ -5,6 +5,7 @@ import { Value as carta } from '../../interfaces/GetVitrinaResponse';
 import CartaDetalle from '../../shared/components/carta/CartaDetalle';
 import Barradebusqueda from '../../shared/components/encabezado/Barradebusqueda';
 import EncabezadoOpciones from '../../shared/components/encabezado/EncabezadoOpciones';
+import Navbar from '../../shared/components/encabezado/Navbar';
 
 interface cartaCompleta {
     carta: carta,
@@ -18,6 +19,7 @@ export default function DetailPage() {
     return (
         <div className='container'>
             <EncabezadoOpciones />
+            <Navbar />
             <Barradebusqueda />
             <CartaDetalle cartaObject={carta.carta}
                 cartaInventarioObject={carta.inventario} />
