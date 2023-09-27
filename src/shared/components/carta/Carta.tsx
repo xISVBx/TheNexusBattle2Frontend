@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Arma, GetCartaByIDResponse, Heroe } from '../../../interfaces/GetCartaByIdResponse'
 import { Value } from '../../../interfaces/GetVitrinaResponse'
 import inventario from '../../../services/inventario'
-import { Link } from 'react-router-dom'
-import CartaHeroe from './CartaHeroe'
 import CartaArma from './CartaArma'
+import CartaHeroe from './CartaHeroe'
 interface CartaProps {
     carta: Value
 }
@@ -27,8 +27,12 @@ const Carta: React.FC<CartaProps> = ({ carta }) => {
         <>
             <div className="carta" >
                 <Link
-                    to={`/carta/${encodeURIComponent(JSON.stringify(carta))}/${encodeURIComponent(JSON.stringify(cartaInventario))}`}
+                    to={'/carta'}
                     className='link'
+                    state={{
+                        carta: carta,
+                        inventario:cartaInventario
+                    }}
                 >
                     <div className="carta-imagen">
                         <img src={cartaInventario?.value.imgUrl} alt="Imagen de la carta" />

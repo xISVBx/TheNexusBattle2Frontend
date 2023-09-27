@@ -1,6 +1,6 @@
+import { GetCartaByIDResponse } from '../../../interfaces/GetCartaByIdResponse';
+import { Value as carta } from '../../../interfaces/GetVitrinaResponse';
 import styles from '../../css/CartaDetalle.module.css'; // Importa los estilos del módulo CSS
-import { Value as carta } from '../../../interfaces/GetVitrinaResponse'
-import { GetCartaByIDResponse } from '../../../interfaces/GetCartaByIdResponse'
 
 interface CartaDetalleProps {
     cartaObject: carta,
@@ -17,7 +17,7 @@ const CartaDetalle = ({cartaObject, cartaInventarioObject}: CartaDetalleProps) =
     const handleComprarClick = () => {
         // Lógica para realizar la compra
     };
-
+    
     return (
         <div className={styles.container}> {/* Usa la clase del módulo CSS */}
             <div className={styles.detalle}> {/* Usa la clase del módulo CSS */}

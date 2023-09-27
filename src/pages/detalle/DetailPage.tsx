@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import '../../index.css';
 import { GetCartaByIDResponse } from '../../interfaces/GetCartaByIdResponse';
 import { Value as carta } from '../../interfaces/GetVitrinaResponse';
@@ -6,17 +6,21 @@ import CartaDetalle from '../../shared/components/carta/CartaDetalle';
 import Barradebusqueda from '../../shared/components/encabezado/Barradebusqueda';
 import EncabezadoOpciones from '../../shared/components/encabezado/EncabezadoOpciones';
 
-export default function DetailPage() {
-    const { carta, inventario } = useParams();
+interface cartaCompleta {
+    carta: carta,
+    inventario: GetCartaByIDResponse
+}
 
-    const cartaObject : carta = JSON.parse(decodeURIComponent(carta!));
-    const cartaInventarioObject : GetCartaByIDResponse = JSON.parse(decodeURIComponent(inventario!));
+export default function DetailPage() {
+    const location = useLocation();
+    const carta : cartaCompleta = location.state;
+    console.log(carta)
     return (
         <div className='container'>
-            <EncabezadoOpciones/>
+            <EncabezadoOpciones />
             <Barradebusqueda />
-            <CartaDetalle cartaObject={cartaObject}
-            cartaInventarioObject={cartaInventarioObject} />
+            <CartaDetalle cartaObject={carta.carta}
+                cartaInventarioObject={carta.inventario} />
         </div>
     )
 }
