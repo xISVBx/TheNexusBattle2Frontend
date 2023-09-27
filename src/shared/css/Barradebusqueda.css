@@ -1,0 +1,15 @@
+.barrabusqueda{
+    grid-area:barraBusqueda ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50%;
+}
+
+.barrabusqueda input{
+    background-color: #08244E;
+    padding: 2%;
+    border: 3px solid #FBBF00;
+    color: #FBBF00;
+    width: 80%;
+}

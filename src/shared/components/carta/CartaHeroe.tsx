@@ -1,6 +1,6 @@
 import React from 'react'
-import { Heroe } from '../../../../interfaces/GetCartaByIdResponse'
-import { Value } from '../../../../interfaces/GetVitrinaResponse'
+import { Heroe } from '../../../interfaces/GetCartaByIdResponse'
+import { Value } from '../../../interfaces/GetVitrinaResponse'
 interface CartaHeroeProps {
     cartaInventario: Heroe
     carta: Value

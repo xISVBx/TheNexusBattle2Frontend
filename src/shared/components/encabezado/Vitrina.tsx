@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
+import useVitrinaData from '../../../pages/home/hooks/useVitrina';
 import '../../css/Vitrina.css'; // Importar los estilos
-import useVitrinaData from '../../hooks/useVitrina';
-import Carta from '../Carta/Carta';
+import Carta from '../carta/Carta';
 
 const Vitrina: React.FC = () => {
 

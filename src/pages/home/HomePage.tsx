@@ -1,8 +1,8 @@
 import '../../index.css'
-import Barradebusqueda from './components/Encabezado/Barradebusqueda'
-import Encabezado from './components/Encabezado/Encabezado'
-import EncabezadoOpciones from './components/Encabezado/EncabezadoOpciones'
-import Vitrina from './components/Encabezado/Vitrina'
+import Barradebusqueda from '../../shared/components/encabezado/Barradebusqueda'
+import Encabezado from '../../shared/components/encabezado/Encabezado'
+import EncabezadoOpciones from '../../shared/components/encabezado/EncabezadoOpciones'
+import Vitrina from '../../shared/components/encabezado/Vitrina'
 
 export default function HomePage() {
     return (

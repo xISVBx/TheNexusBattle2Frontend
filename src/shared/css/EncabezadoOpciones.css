@@ -1,0 +1,43 @@
+.e-commerce {
+    grid-area: e-commerce;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:3%;
+}
+
+.e-commerce img{
+height: 5vh;
+width: auto;
+}
+
+.notification{
+    cursor: pointer;
+}
+.kart{
+    cursor: pointer;
+}
+
+.monedas {
+    background-color: #ce9e4a;
+    border: #FBBF00 solid 0.2rem;
+    color: white;
+    height: 30%;
+    width: auto;
+    text-align: center;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.money{
+    display: flex;
+    align-items: center;
+    margin-inline: 10%;
+    gap: 5%;
+}

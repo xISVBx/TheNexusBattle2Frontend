@@ -1,0 +1,152 @@
+.vitrina {
+    grid-area: cartas;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-inline: 20%;
+
+}
+
+.carta {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px 0px 2px 0px;
+    margin: 10px;
+    text-align: center;
+    background-color: #cccc;
+    width: 220px;
+    position: relative;
+    height: auto;
+}
+.carta-precio{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    background-color: #c62424;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 0px 10px 0px 0px;
+}
+.carta-descuento{
+    display: flex;
+    flex-direction: row;
+}
+.precio-descuento{
+    text-decoration: line-through;
+}
+.descuento{
+    margin-left: 5px;
+    font-weight: bold;
+}
+/* Estilo para la imagen de la carta */
+.carta-imagen img {
+    height: 150px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+/* Estilo para el título de la carta */
+.carta-titulo h3 {
+    font-size: 16px;
+    color: black;
+}
+
+.carta-atributos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    justify-content: start;
+}
+
+.carta-atributos .atributo {
+    margin: 1px 5px;
+    color: black;
+    font-size: 13px;
+}
+
+
+.carta-acciones .slice {
+    border-top: 2px solid #ccc;
+    margin-top: 2px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para el texto en la sección de acciones */
+.slice-texto p {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+.slice-botones {
+    display: flex;
+    flex-direction: row;
+}
+
+.slice-botones button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+/* Estilo para el botón "Añadir a Favoritos" */
+.boton-favoritos {
+    background-color: #ffcc00;
+    /* Color personalizado para el botón de favoritos */
+}
+
+/* Estilo para el botón "Enviar al Carrito" */
+.boton-carrito {
+    background-color: #e74c3c;
+    /* Color personalizado para el botón de carrito */
+}
+
+.paginador {
+    grid-area: paginador;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    gap:3%;
+    padding-left: 10%;
+}
+
+.pagina{
+    background-color: #08244E;
+    border: 2px solid #FBBF00 ;
+    width: 5vh;
+    height:5vh;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.pagina h3{
+    transform: rotate(-45deg);
+    color: white;
+}
+
+.pagina:hover{
+    background-color: #FBBF00;
+    border: 2px solid #08244E ;
+    width: 5vh;
+    height:5vh;
+    transform: rotate(45deg);
+    flex-shrink: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffff;
+}
