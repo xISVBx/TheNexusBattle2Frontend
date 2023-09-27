@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../../css/CartaDetalle.css';
 
 interface Carta {
   imagen: string;
@@ -16,18 +17,15 @@ const CartaDetalle: React.FC = () => {
     descripcion: '',
     precio: 0,
   });
-  const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     fetch('http://delta.bucaramanga.upb.edu.co:32777/api/carta/1')
       .then((response) => response.json())
       .then((data: Carta) => {
         setCarta(data);
-        setLoading(false);
       })
       .catch((error) => {
         console.error('Error al obtener los datos de la API', error);
-        setLoading(false);
       });
   }, []);
 

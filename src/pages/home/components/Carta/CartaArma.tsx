@@ -1,6 +1,7 @@
 import React from 'react'
 import { Arma } from '../../../../interfaces/GetCartaByIdResponse'
 import { Value } from '../../../../interfaces/GetVitrinaResponse'
+
 interface CartaHeroeProps {
     cartaInventario: Arma
     carta: Value
