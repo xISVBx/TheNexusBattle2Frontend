@@ -1,0 +1,131 @@
+.carrito-banner {
+    position: fixed;
+    top: 10%;
+    right: 15%;
+    width: 30vw;
+    height: 40vh;
+    background-color: hsla(0, 0%, 83%, 0.8);
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    color: black;
+    padding: 1%;
+    max-height: 60vh;
+    overflow-y: auto;
+    border-radius: 25px;
+
+}
+
+.carrito-banner::-webkit-scrollbar {
+    width: 0.2rem;
+}
+
+.productoAgregado {
+    border-top: solid rgb(161, 157, 157);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.btncarrito {
+    background-color: #FBBF00;
+    color: black;
+    border: solid black;
+    border-radius: 25px;
+    padding: 3%;
+    text-decoration: none;
+}
+
+.btncarrito a {
+    color: black;
+    text-decoration: none;
+}
+
+.btncarrito:hover {
+    border: solid rgb(9, 186, 165);
+}
+
+.btncarrito:hover a {
+    color: rgb(9, 186, 165);
+}
+
+.botones {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1%;
+}
+
+.botones button,
+.botones p {
+    width: 10%;
+    height: auto;
+}
+
+.restarProducto {
+    background-color: #166daf;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    border:#166daf solid 1px ;
+    border-radius: 2px;
+}
+
+.restarProducto:hover {
+    background-color: white;
+    color: #166daf;
+
+}
+
+.sumarProducto {
+    background-color: #158C02;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border:#158C02 solid 1px ;
+    border-radius: 2px;
+}
+
+.sumarProducto:hover {
+    background-color: white;
+    color: #158C02;
+}
+
+.eliminarProducto {
+    background-color: #890000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    margin-left: 22%;
+    border:#890000 solid 1px ;
+    border-radius: 2px;
+}
+
+.eliminarProducto:hover {
+    background-color: white;
+    color: #890000;
+}
+
+.cantidadProducto {
+    background-color: #FBBF00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+
+.tituloProductoAgregado {
+    color: rgb(97, 2, 180);
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
