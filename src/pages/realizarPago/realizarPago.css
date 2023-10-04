@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    font-family: "MedievalSharp", cursive, Arial, sans-serif;
+}
+body{
+    background-image: url("../img/vitrinaWallpaper.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece la altura del contenedor para ocupar toda la altura de la ventana */
+    padding: 20px;
+}
+.col1{
+    background-color: rgba(255, 255, 255, 0.58);
+    width: 800px; /*Ancho*/
+    height: 500px; /*Alto*/
+    padding-top: 30px;
+    padding-left: 30px;
+}
+h1{
+    color: #ce9e4a;
+    margin-bottom: 7%;
+}
+.col2{
+    background-color: rgba(126, 126, 126, 0.63);
+    width: 500px; /*Ancho*/
+    height: 500px; /*Alto*/
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+.btn{
+    color: white;
+    border: 0px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    width: 30%;
+}
+
+#paypal{
+    background-color: #ce9e4a;
+    padding-top: 1%;
+}
+#tarjeta{
+    background-color: rgba(90, 53, 23, 1);
+    padding: 1.3%;
+    margin-top: -10px;
+}
+.btn img {
+    width: 100px; /*Ancho*/
+    height: 30px; /*Alto*/
+}
+
+.imagenc{
+    height:auto;
+    width: 15%;
+}	
+    
+.imagenc img {
+    max-width: 100%;
+    height: auto;
+    border-image: 50%;
+    border-radius: 25px; 
+}
+.linea-divisora1 {
+    border: none;
+    border-top: 2px solid #00000080;
+    margin: 30px 0;
+    width: 80%; 
+}
+.linea-divisora2 {
+    border: none;
+    border-top: 2px solid #00000080;
+    margin: 30px 0;
+    width: 100%; 
+    justify-content: center;
+}
+.info{
+    display: flex;
+}
+
+label{
+    display: block;
+}
+input {
+    display: block;
+    height: 30px; /*Alto*/
+}
+#email{
+    width: 300px; /*Ancho*/
+}
+.f1{
+    padding-right: 12%;
+}
+.f1_2{
+    display: flex;
+}
+.f1_2_1{
+    margin-right: 30px;
+}
+.f2_2{
+    display: flex;
+}
+#date{
+    width: 180px; /*Ancho*/
+}
+#card_no{
+    width: 300px; /*Ancho*/
+}
+.product_info{
+    display: flex;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+#precio_carta{
+    margin-left: 4%;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.btn2{
+    background-image: url("../img/woodTexture.png");
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    width: 150px; /*Ancho*/
+    height: 50px; /*Alto*/
+    margin-top: 20%;
+    margin-left: 65%;
+}
