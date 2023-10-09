@@ -1,19 +1,19 @@
 import React from 'react'; // Importar siempre react
 import '../../css/Perfil.css'; // Importar los estilos
 
-export default class Login extends React.Component { 
-    render(){ 
-        return ( 
-            <div className="loginBox"> 
-                <div className="box">
-                    <p>Iniciar sesion</p>
-                </div>
+export default class Login extends React.Component {
+    render() {
+        return (
+            <div className="loginBox">
+                <a className="box" href="/signin">
+                    Iniciar sesion
+                </a>
 
-                <div className='box'>
-                    <p>Registrarse</p>              
-                </div>
-  
-            </div> 
+                <a className='box' href="/signin">
+                    Registrarse
+                </a>
+
+            </div>
         );
-    } 
+    }
 }
