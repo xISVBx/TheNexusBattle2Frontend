@@ -12,7 +12,6 @@ export default class Login extends React.Component {
                 <a className='box' href="/signin">
                     Registrarse
                 </a>
-
             </div>
         );
     }

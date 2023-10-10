@@ -5,17 +5,21 @@ import Navbar from '../home/components/Encabezado/Navbar'
 import EncabezadoOpciones from '../home/components/Encabezado/EncabezadoOpciones'
 import Login from '../home/components/Login/Login_page'
 
-export default class perfil extends React.Component { 
-    render(){ 
+export default class perfil extends React.Component {
+    render() {
         return (
             <div className="containerPerfil">
-              <Barradebusqueda />
-              <Navbar />
-              <EncabezadoOpciones />
-              <Login />
-            </div>
-          );
-    } 
-} 
+                <Barradebusqueda />
+                <Navbar />
+                <EncabezadoOpciones />
+                <div className='containerLogin'>
+                    <Login />
+                </div>
+            </div>  
+        );
+    }
+    
+}
+
 
 
