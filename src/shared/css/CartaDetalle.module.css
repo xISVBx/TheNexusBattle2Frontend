@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    Grid-area: cartas;
+    grid-area: cartas;
 }
 
 .detalle {
