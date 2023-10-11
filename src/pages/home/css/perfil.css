@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  font-family: "MedievalSharp", cursive, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.loginBox {
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.50);
+  display: flex;
+  flex-direction: column;
+  /* Para alinear el contenido verticalmente */
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
+  height: 50vh;
+  width: 100vh;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.loginBox p {
+  color: #FBBF00;
+  text-align: center;
+  font-family: MedievalSharp;
+  font-size: 3.5vh;
+  font-style: normal;
+  line-height: normal;
+}
+
+.box {
+  margin-top: 2vh;
+  height: 10vh;
+  width: 60vh;
+  border: 2px solid transparent;
+  /* Inicialmente, el borde es transparente */
+  background: #1A345A;
+  padding-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+  border-color: #FFEE51;
+}
+
+/* Estilo del borde al pasar el mouse */
+.box:hover {
+  border-color: #FFEE51;
+  /* Cambia el color del borde al pasar el mouse */
+  transform: scale(1.05);
+  /* Hace que el elemento se agrande ligeramente */
+  transition: border-color 0.3s, transform 0.3s;
+  /* Aplica una transición suave */
+  animation: shake 0.5s;
+  /* Agita el elemento durante 0.5 segundos al pasar el mouse */
+}
+
+/* Animación de sacudida */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+    /* Sin traslación en el inicio y al final */
+  }
+
+  25% {
+    transform: translateX(-5px);
+    /* Traslación hacia la izquierda al 25% */
+  }
+
+  50% {
+    transform: translateX(5px);
+    /* Traslación hacia la derecha al 50% */
+  }
+
+  75% {
+    transform: translateX(-5px);
+    /* Traslación hacia la izquierda al 75% */
+  }
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.containerPerfil {
+  height: 100vh;
+  width: 100vw;
+  max-height: 100vh;
+  max-width: 100vw;
+  background-image: url('/img/perfilWallpaper.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: 1fr 5fr 2.5fr 1.2fr 0.3fr;
+  grid-template-areas:
+    ". barraBusqueda e-commerce navbar ."
+    ". cartas cartas navbar ."
+    ". paginador paginador navbar .";
+}
+
+.containerLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
