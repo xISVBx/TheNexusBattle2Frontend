@@ -6,11 +6,11 @@ export default class Login extends React.Component {
         return (
             <div className="loginBox">
                 <a className="box" href="/signin">
-                    Iniciar sesion
+                   <p> Iniciar sesion </p> 
                 </a>
 
                 <a className='box' href="/signin">
-                    Registrarse
+                    <p> Registrarse </p>
                 </a>
             </div>
         );

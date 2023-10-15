@@ -22,6 +22,16 @@
   transform: translate(-50%, -50%); /* Centra el elemento en el centro del contenedor padre */
 }
 
+.loginBox a {
+  color: #FBBF00;
+  text-align: center;
+  text-decoration: none;
+  font-family: "MedievalSharp", cursive, Arial, sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  line-height: normal;
+}
+
 
 .cartas {
   display: flex;
