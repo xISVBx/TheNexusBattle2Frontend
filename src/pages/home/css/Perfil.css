@@ -16,7 +16,12 @@
   align-items: center; /* Centra horizontalmente */
   height: 50vh; 
   width: 100vh;
+  position: absolute; /* Permite el uso de top y left */
+  top: 50%; /* Mueve el elemento hacia abajo un 50% de la altura del contenedor padre */
+  left: 50%; /* Mueve el elemento hacia la derecha un 50% de la anchura del contenedor padre */
+  transform: translate(-50%, -50%); /* Centra el elemento en el centro del contenedor padre */
 }
+
 
 .cartas {
   display: flex;
@@ -95,9 +100,3 @@ body {
       ". paginador paginador navbar .";
 }
 
-.containerLogin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
