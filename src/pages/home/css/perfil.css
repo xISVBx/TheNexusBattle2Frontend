@@ -112,6 +112,7 @@ body {
 }
 
 .containerLogin {
+  grid-area: cartas;
   display: flex;
   flex-direction: column;
   justify-content: center;
